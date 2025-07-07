@@ -1,4 +1,3 @@
-import About from "./components/About Us/about";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Scheduler from "./components/Scheduler/Scheduler";
 // import Navbar from "./components/navbar/Navbar";
@@ -185,3 +184,4 @@ const App = () => {
 };
 
 export default App;
+// export default App;

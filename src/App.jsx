@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Scheduler from "./components/Scheduler/Scheduler";
 // import Navbar from "./components/navbar/Navbar";
 import Form1 from "./components/regidtration form/Form1";
-import Steps from "./components/Steps/steps";
+import Steps from "./components/Steps/Steps";
 import Slider from "./components/slider/Slider2";
 import Slider2 from "./components/slider/Slider2";
 import AuroraBackground from "./components/aurora/Aurora";

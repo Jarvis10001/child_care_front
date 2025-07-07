@@ -8,7 +8,7 @@ import Settings from '../../pages/Settings';
 import Appointment from '../../pages/Appointment';
 import AppointmentHistory from '../../pages/AppointmentHistory';
 import Vaccination from '../../pages/Vaccination';
-import WHOGuidelines from '../../pages/WHOguidelines';
+import WHOGuidelines from '../../pages/WHOGuidelines';
 import Form1 from '../../../regidtration form/Form1';
 import Profile from '../../../Profile/Profile';
 import QuestionForm from '../../../Questions/QuestionForm';

@@ -24,5 +24,9 @@ export default defineConfig({
   preview: {
     port: 4173,
     host: true
+  },
+  define: {
+    // Ensure environment variables are available at build time
+    __API_BASE_URL__: JSON.stringify(process.env.VITE_API_BASE_URL || 'https://child-care-back.onrender.com')
   }
 })

@@ -1,0 +1,62 @@
+.auroraBackground {
+  background: rgb(25, 15, 35);
+  position: relative;
+  overflow: hidden;
+}
+
+.auroraGradient::before,
+.auroraGradient::after {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background: 
+    repeating-linear-gradient(
+      100deg,
+      var(--blue-500, rgba(59, 130, 246, 0.5)) 10%,
+      var(--indigo-300, rgba(81, 98, 185, 0.5)) 15%,
+      var(--blue-300, rgba(72, 120, 175, 0.5)) 20%,
+      var(--violet-200, rgba(95, 75, 185, 0.5)) 25%,
+      var(--blue-400, rgba(96, 165, 250, 0.5)) 30%
+    );
+  background-size: 400% 400%;
+  animation: moveGradient 90s linear infinite;  /* Increased from 60s to 90s */
+  filter: blur(40px);
+}
+
+.auroraGradient::after {
+  background: 
+    repeating-linear-gradient(
+      100deg,
+      var(--white, rgba(255, 255, 255, 0.05)) 0%,
+      var(--white, rgba(255, 255, 255, 0.05)) 7%,
+      transparent 10%,
+      transparent 12%,
+      var(--white, rgba(255, 255, 255, 0.05)) 16%
+    );
+  animation: moveGradient 85s linear infinite reverse;  /* Increased from 55s to 85s */
+  filter: blur(50px);
+  mix-blend-mode: difference;
+}
+
+
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+  --blue-500: rgba(59, 130, 246, 0.5);
+  --indigo-300: rgba(30, 39, 85, 0.5);
+  --blue-300: rgba(59, 132, 215, 0.5);
+  --violet-200: rgba(82, 61, 171, 0.5);
+  --blue-400: rgba(96, 165, 250, 0.5);
+  --white: rgba(255, 255, 255, 0.05);
+}
